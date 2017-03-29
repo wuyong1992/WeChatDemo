@@ -1,6 +1,7 @@
 package com.yanmai.wechat.main;
 
 import com.yanmai.wechat.pojo.*;
+import com.yanmai.wechat.thread.TokenThread;
 import com.yanmai.wechat.utils.MessageUtil;
 import com.yanmai.wechat.utils.WeixinUtil;
 import org.slf4j.Logger;
@@ -95,7 +96,9 @@ public class MenuManager {
 
     public static void main(String[] args) {
         //调用接口获取access_token
-        AccessToken accessToken = WeixinUtil.getAccessToken(MessageUtil.APPID, MessageUtil.APPSECRET);
+        //AccessToken accessToken = WeixinUtil.getAccessToken(MessageUtil.APPID, MessageUtil.APPSECRET);
+        //通过线程获得
+        AccessToken accessToken = TokenThread.accessToken;
 
         if (null != accessToken) {
             // 调用接口创建菜单
