@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * 菜单基类
+ * 按钮基类
  * Created by wuyong on 2017/3/29.
  */
 @Getter@Setter

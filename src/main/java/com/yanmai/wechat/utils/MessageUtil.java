@@ -23,6 +23,18 @@ import java.util.Map;
  */
 public class MessageUtil {
     /**
+     * AppID
+     */
+    public static final String APPID = "wx2749f3671b72c903";
+
+    /**
+     *  AppSecret
+     */
+    public static final String APPSECRET = "ade61fb9d96dcee3a0d388c76a001f84";
+
+
+
+    /**
      * 返回消息类型：文本
      */
     public static final String RESP_MESSAGE_TYPE_TEXT = "text";
@@ -78,6 +90,16 @@ public class MessageUtil {
     public static final String REQ_MESSAGE_TYPE_EVENT = "event";
 
     /**
+     * click按钮类型
+     */
+    public static final String BUTTON_TYPE_CLICK = "click";
+
+    /**
+     * view按钮类型
+     */
+    public static final String BUTTON_TYPE_VIEW = "view";
+
+    /**
      * 事件类型：subscribe(订阅)
      */
     public static final String EVENT_TYPE_SUBSCRIBE = "subscribe";
@@ -91,6 +113,10 @@ public class MessageUtil {
      * 事件类型：CLICK(自定义菜单点击事件)
      */
     public static final String EVENT_TYPE_CLICK = "CLICK";
+    /**
+     * 事件类型：view(自定义菜单视图事件)
+     */
+    public static final String EVENT_TYPE_VIEW = "VIEW";
 
     /**
      * 解析微信发来的请求（XML）

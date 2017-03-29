@@ -4,11 +4,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * 具体菜单
+ * CLICK事件按钮
  * Created by wuyong on 2017/3/29.
  */
 @Setter@Getter
-public class CommonButton extends Button {
+public class ClickButton extends Button {
     //类型
     private String type;
+    //菜单KEY值，用于消息接口推送，不超过128字节
+    private String key;
 }
